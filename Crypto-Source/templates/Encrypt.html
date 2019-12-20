@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Crypto-Source</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Return to Home</a>
+            </nav>
+        </header>
+        
+        <h1>Input Pulbic Key into Box below</h1>
+
+        <form action="publickey" method="POST">
+            Public Key (E): <input type="number" name="e"><br>
+            Public Key (N): <input type="number" name="n"><br>
+            <input type="submit" value="submit">
+        </form>
+
+        <h2>Use Text Box Below to Encrypt a Message</h2>
+
+        <form action="/Encryption" method="POST">
+            Message to Encrypt: <input type="text" name="plaintext"><br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
